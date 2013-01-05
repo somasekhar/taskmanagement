@@ -34,8 +34,8 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem 'less-rails'
 end
-gem 'twitter-bootstrap-rails'
-gem 'less-rails'
+#gem 'twitter-bootstrap-rails'
+#gem 'less-rails'
 
 gem 'jquery-rails'
 
