@@ -1,0 +1,31 @@
+<%= simple_form_for @task, :html => {:class => 'form-horizontal'} do |f| %>
+
+    <fieldset>
+      <legend><%= controller.action_name.capitalize %> Task</legend>
+
+      <%= f.input :title %>
+      <%= f.input :content %>
+      <p class="checkbox" style="padding-left: 150px;">
+      <%= f.check_box :check, :value => 1 %> Check To Complete the Task
+      </p>
+      <!--<div class="control-group">
+    <%#= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%#= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%#= f.label :content, :class => 'control-label' %>
+    <div class="controls">
+      <%#= f.text_area :content, :class => 'text_area' %>
+    </div>
+  </div>-->
+
+      <div class="form-actions">
+        <%= f.submit nil, :class => 'btn btn-primary' %>
+        <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                    tasks_path, :class => 'btn' %>
+      </div>
+
+    </fieldset>
+<% end %>
