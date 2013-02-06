@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -47,7 +49,7 @@
 
 <div class="container">
   <% flash.each do |name, msg| %>
-      <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+      <div class="alert alert-<%= name == :notice ? "success" : "error" %>" id="removealert">
         <a class="close" data-dismiss="alert">x</a>
         <%= msg %>
 
